@@ -1,0 +1,591 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* PAGE */
+
+body {
+    width: 1440px;
+    height: 100%;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.page-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.page-logo h1 {
+    width: 132px;
+    height: 16px;
+    font-family: Oswald;
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none solid rgb(0, 0, 0);
+    line-height: 16px;
+    letter-spacing: 2px;
+}
+
+.page-logo p {
+    width: 117px;
+    height: 16px;
+    font-family: Oswald;
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none solid rgb(0, 0, 0);
+    line-height: 16px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    width: 500px;
+}
+
+.class {
+    width: 68px;
+    height: 20px;
+    opacity: 0.8;
+    font-family: Libre Baskerville;
+    font-size: 13px;
+    color: #000000;
+    text-decoration: none solid rgb(0, 0, 0);
+    line-height: 20px;
+    text-align: right;
+}
+
+.hero1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 800px;
+}
+
+.chefImg {
+    display: flex;
+    align-items: center;
+    width: 590px;
+    height: 635px;
+    background-color: #f2f2f2;
+    background-size: cover;
+    position: relative;
+}
+
+.chefImg img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 590px;
+    height: 635px;
+    background-color: #ebebeb;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.chefImg-des {
+    height: 735px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.chefImg-des h1 {
+    width: 455px;
+    height: 51px;
+    font-family: Quattrocento;
+    font-size: 46px;
+    color: #000000;
+    text-decoration: none solid rgb(0, 0, 0);
+}
+
+.chefImg-des-p1 {
+    width: 455px;
+    height: 86px;
+    opacity: 0.8;
+    font-family: Libre Baskerville;
+    font-size: 13px;
+    color: #000000;
+    text-decoration: none solid rgb(0, 0, 0);
+    line-height: 22px;
+}
+
+.chefImg-des-p2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 42px;
+    border: 1px solid #c8c8c8;
+    background-color: #ffffff;
+}
+
+.chefImg-des-p2 p {
+    width: 90px;
+    height: 20px;
+    opacity: 0.65;
+    font-family: Libre Baskerville;
+    font-size: 10px;
+    color: #000000;
+    text-decoration: none solid rgb(0, 0, 0);
+    line-height: 20px;
+}
+
+.arrow {
+    /* width: 28px; */
+    height: 32px;
+    opacity: 0.35;
+    transform: rotate(90deg);
+}
+
+.master-chef-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 455px;
+    height: 99px;
+    border: 1px solid #efefef;
+    background-color: #ffffff;
+}
+
+.master-chef-logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.master-chef-logo h1 {
+    width: 314px;
+    height: 20px;
+    font-family: Quattrocento;
+    font-size: 19px;
+    color: #000000;
+    text-decoration: none solid rgb(0, 0, 0);
+}
+
+.hero2 {
+    display: flex;
+    width: 100%;
+    height: 1012px;
+    background-color: #f5f5f5;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero2-des h1 {
+    width: 688px;
+    height: 40px;
+    font-family: Quattrocento;
+    font-size: 36px;
+    color: #000000;
+    text-decoration: none solid rgb(0, 0, 0);
+    text-align: center;
+}
+
+.hero2-des p {
+    width: 688px;
+    height: 43px;
+    opacity: 0.8;
+    font-family: Libre Baskerville;
+    font-size: 13px;
+    color: #000000;
+    text-decoration: none solid rgb(0, 0, 0);
+    line-height: 22px;
+    text-align: center;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card1-img {
+    width: 334px;
+    height: 422px;
+    background-image: url("../image/card1.png");
+    background-color: #ffffff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card2-img {
+    width: 334px;
+    height: 422px;
+    background-image: url("../image/card2.png");
+    background-color: #ffffff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card3-img {
+    width: 334px;
+    height: 422px;
+    background-image: url("../image/card3.png");
+    background-color: #ffffff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-des {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 334px;
+    height: 100px;
+    background-color: #ffffff;
+    background-size: cover;
+}
+
+.card-text {
+    width: 241px;
+    height: 48px;
+    font-family: Quattrocento;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none solid rgb(0, 0, 0);
+    line-height: 24px;
+}
+
+.hero2-btn {
+    width: 160px;
+    height: 42px;
+    border: 1px solid #c8c8c8;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero2-btn p {
+    width: 80px;
+    height: 20px;
+    opacity: 0.65;
+    font-family: Libre Baskerville;
+    font-size: 10px;
+    color: #000000;
+    text-decoration: none solid rgb(0, 0, 0);
+    line-height: 20px;
+}
+
+.hero3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 720px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero3-insta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero3-insta img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    fill: #000000;
+}
+
+.hero3-insta p {
+    width: 944px;
+    height: 40px;
+    font-family: Quattrocento;
+    font-size: 36px;
+    color: #000000;
+    text-decoration: none solid rgb(0, 0, 0);
+    text-align: center;
+}
+
+.cards-img img {
+    width: 982px;
+    height: 317px;
+}
+
+.hero3-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 42px;
+    border: 1px solid #c8c8c8;
+    background-color: #ffffff;
+}
+
+.hero3-btn p {
+    width: 90px;
+    height: 20px;
+    opacity: 0.65;
+    font-family: Libre Baskerville;
+    font-size: 10px;
+    color: #000000;
+    text-decoration: none solid rgb(0, 0, 0);
+    line-height: 20px;
+}
+
+.hero4 {
+    width: 100%;
+    height: 870px;
+    background-color: #333333;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero4-des h1 {
+    width: 455px;
+    height: 153px;
+    font-family: Quattrocento;
+    font-size: 46px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+}
+
+.hero4-des p {
+    width: 455px;
+    height: 86px;
+    font-family: Libre Baskerville;
+    font-size: 13px;
+    color: #999999;
+    text-decoration: none solid rgb(153, 153, 153);
+    line-height: 22px;
+}
+
+.hero4-des-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 42px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+}
+
+.hero4-des-btn p {
+    width: 80px;
+    height: 20px;
+    opacity: 0.65;
+    font-family: Libre Baskerville;
+    font-size: 9px;
+    color: #000000;
+    text-decoration: none solid rgb(0, 0, 0);
+    line-height: 20px;
+}
+
+.hero4-chef-img {
+    position: relative;
+    width: 590px;
+    height: 635px;
+    background-color: #ffffff;
+    background-size: cover;
+}
+
+.hero4-chef-img img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 590px;
+    height: 635px;
+    background-color: #ebebeb;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.prev {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+}
+
+.hero5 {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero5 h1 {
+    width: 688px;
+    height: 40px;
+    font-family: Quattrocento;
+    font-size: 36px;
+    color: #000000;
+    text-decoration: none solid rgb(0, 0, 0);
+    text-align: center;
+}
+
+.hero5 p {
+    width: 688px;
+    height: 21px;
+    opacity: 0.8;
+    font-family: Libre Baskerville;
+    font-size: 13px;
+    color: #000000;
+    text-decoration: none solid rgb(0, 0, 0);
+    line-height: 22px;
+    text-align: center;
+}
+
+.hero5-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 370px;
+    height: 50px;
+    border: 1px solid #c8c8c8;
+    background-color: #ffffff;
+}
+
+.hero5-input p {
+    width: 196px;
+    height: 20px;
+    opacity: 0.35;
+    font-family: Libre Baskerville;
+    font-size: 9px;
+    color: #000000;
+    text-decoration: none solid rgb(0, 0, 0);
+    line-height: 20px;
+    border: none;
+}
+
+.hero5-input-btn {
+    width: 141px;
+    height: 40px;
+    background-color: #333333;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero5-input-btn p {
+    width: 124px;
+    height: 20px;
+    font-family: Libre Baskerville;
+    font-size: 9px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 99px;
+    background-color: #f5f5f5;
+    background-size: cover;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-para1 {
+    width: 344px;
+    height: 20px;
+    /* Terms of use  |  ... */
+    font-family: Libre Baskerville;
+    font-size: 11px;
+    color: #000000;
+    text-decoration: none solid rgba(0, 0, 0, 0.45);
+    line-height: 20px;
+    /* Privacy Policy */
+    font-family: Libre Baskerville;
+    font-size: 11px;
+    color: #000000;
+    text-decoration: none solid rgba(0, 0, 0, 0.45);
+    line-height: 20px;
+}
+
+.footer-para2 {
+    width: 343px;
+    height: 20px;
+    /* © 2019 Home Cook ... */
+    font-family: Libre Baskerville;
+    font-size: 11px;
+    color: #000000;
+    text-decoration: none solid rgba(0, 0, 0, 0.45);
+    line-height: 20px;
+    text-align: right;
+    /* Think201 */
+    font-family: Libre Baskerville;
+    font-size: 11px;
+    color: #000000;
+    text-decoration: underline solid rgba(0, 0, 0, 0.45);
+    line-height: 20px;
+    text-align: right;
+}
+
+footer img {
+    width: 94px;
+    height: 28px;
+    mix-blend-mode: multiply;
+}
